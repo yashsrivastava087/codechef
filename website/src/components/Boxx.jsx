@@ -18,7 +18,6 @@ const Boxx = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
     if (!email || !password) {
       setError('Please fill in both email and password fields.');
       return;
@@ -28,12 +27,12 @@ const Boxx = () => {
     console.log('Password:', password);
     console.log('Remember Me:', rememberMe);
 
-    // Reset error state
+    
     setError('');
   };
 
   const handleInputChange = (e) => {
-    // Reset error state on input change
+    
     setError('');
     if (e.target.id === 'email') {
       setEmail(e.target.value);
